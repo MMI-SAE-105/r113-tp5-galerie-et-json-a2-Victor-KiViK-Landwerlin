@@ -13,7 +13,7 @@
             {
                 nom: 'Jean',
                 projet: 'Alpine.js',
-                url: 'https://alpine.js.dev/'
+                url: 'https://alpinejs.dev/'
             },
             {
                 nom: 'Maxime',
@@ -29,8 +29,8 @@
     }">
         <template x-for="donnee in données">
             <li>
-                <span x-text="donnée.nom">nom</span>:
-                <a href=""></a>
+                <span x-text="donnee.nom">nom</span>
+                <a href= donnee.url x-text="donnee.projet">projet</a>
             </li>
         </template>
     </ul>
