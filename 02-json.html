@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="//unpkg.com/alpinejs" defer></script>
     <title>Document</title>
+    <style>
+        @keyframes supercouleur{
+        from, to {color:magenta;}
+        10% {color:red;}
+        20% {color:brown;}
+        30% {color:orange;}
+        40% {color:yellow;}
+        50% {color:green;}
+        60% {color:cyan;}
+        70% {color:blue;}
+        80% {color:indigo;}
+        90% {color:violet;}
+        }
+        .Lien{
+            animation: supercouleur 10s infinite;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+        }
+    </style>
 </head>
 <body>
     <h1>JSON</h1>
@@ -17,7 +35,7 @@
         <template x-for="donnee in données">
             <li>
                 <span x-text="donnee.nom">nom</span>
-                <a :href="donnee.url"  x-text="donnee.projet">projet</a>
+                <a class="Lien" :href="donnee.url"  x-text="donnee.projet">projet</a>
             </li>
         </template>
     </ul>
