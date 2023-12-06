@@ -26,6 +26,14 @@
                 url: 'https://laravel.com/'
             }
         ]
-    }"></ul>
+    }">
+        <template x-for="donnee in données">
+            <li>
+                <a :href="donnée.url" target="_blank">
+                    <span x-text="donnée.nom"></span> travaille sur <span x-text="donnée.projet"></span>
+                </a>
+            </li>
+        </template>
+    </ul>
 </body>
 </html>
