@@ -30,7 +30,7 @@
         <template x-for="donnee in données">
             <li>
                 <span x-text="donnee.nom">nom</span>
-                <a href= donnee.url x-text="donnee.projet">projet</a>
+                <a :href="donnee.url"  x-text="donnee.projet">projet</a>
             </li>
         </template>
     </ul>
