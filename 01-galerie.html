@@ -79,8 +79,10 @@
 <body x-data="{imagechien: 'https://picsum.photos/id/237/400/300',}">
     <h1>Galerie</h1>
     <p>lorem⇥</p>
-    <div class="overlay">
-    <figure><img :src= "imagechien" alt="image 237... un chiot"></figure>
-</div>
+    <div class="overlay"
+    x-show="imagechien"
+    @click = "imagechien=null">
+        <figure><img :src= "imagechien" alt="image 237... un chiot"></figure>
+    </div>
 </body>
 </html>
