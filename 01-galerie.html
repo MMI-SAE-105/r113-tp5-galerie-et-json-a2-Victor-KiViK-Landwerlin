@@ -81,7 +81,8 @@
     <p>lorem⇥</p>
     <div class="overlay"
     x-show="imagechien"
-    @click = "imagechien=null">
+    @click = "imagechien=null"
+    @keyup.escape.window= "imagechien=null">
         <figure><img :src= "imagechien" alt="image 237... un chiot"></figure>
     </div>
 </body>
